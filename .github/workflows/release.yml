@@ -1,0 +1,34 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          # Pin for reproducible release artifacts (matches local dev Bun).
+          bun-version: 1.3.14
+
+      - run: bun install --frozen-lockfile
+
+      - name: Zip (Chrome)
+        run: bun run zip
+
+      - name: Zip (Firefox)
+        run: bun run zip:firefox
+
+      - name: Publish GitHub release
+        uses: softprops/action-gh-release@v3
+        with:
+          files: apps/extension/.output/*.zip
+          generate_release_notes: true

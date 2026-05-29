@@ -1,0 +1,15 @@
+{
+  "name": "@jcys/core",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "author": "BitYoungjae <bityoungjae@gmail.com>",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "check": "tsgo --noEmit",
+    "test": "bun test"
+  }
+}

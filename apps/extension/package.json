@@ -1,0 +1,26 @@
+{
+  "name": "@jcys/extension",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Copy the full transcript of the current YouTube video with one click.",
+  "homepage": "https://github.com/BitYoungjae/just-copy-subtitles-for-youtube#readme",
+  "license": "MIT",
+  "author": "BitYoungjae <bityoungjae@gmail.com>",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "dev:firefox": "wxt -b firefox",
+    "build": "wxt build",
+    "build:firefox": "wxt build -b firefox",
+    "zip": "wxt zip",
+    "zip:firefox": "wxt zip -b firefox",
+    "check": "wxt prepare && tsgo --noEmit",
+    "postinstall": "wxt prepare"
+  },
+  "dependencies": {
+    "@jcys/core": "workspace:*"
+  },
+  "devDependencies": {
+    "wxt": "^0.20.26"
+  }
+}

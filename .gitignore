@@ -1,0 +1,17 @@
+node_modules
+.output
+.wxt
+dist
+*.log
+stats.html
+stats-*.json
+
+# Editor / OS
+.DS_Store
+.idea
+.vscode/*
+!.vscode/extensions.json
+
+# Docs (local only)
+SPEC.md
+docs/

@@ -1,0 +1,50 @@
+{
+  "name": "just-copy-youtube-subtitles",
+  "description": "Copy the full transcript of the current YouTube video with one click. (Chrome + Firefox)",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "BitYoungjae <bityoungjae@gmail.com>",
+  "homepage": "https://github.com/BitYoungjae/just-copy-subtitles-for-youtube#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BitYoungjae/just-copy-subtitles-for-youtube.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BitYoungjae/just-copy-subtitles-for-youtube/issues"
+  },
+  "keywords": [
+    "youtube",
+    "subtitles",
+    "captions",
+    "transcript",
+    "clipboard",
+    "browser-extension",
+    "chrome-extension",
+    "firefox-extension",
+    "wxt"
+  ],
+  "workspaces": ["packages/*", "apps/*"],
+  "scripts": {
+    "dev": "bun run --filter '@jcys/extension' dev",
+    "dev:firefox": "bun run --filter '@jcys/extension' dev:firefox",
+    "build": "bun run --filter '@jcys/extension' build",
+    "build:firefox": "bun run --filter '@jcys/extension' build:firefox",
+    "zip": "bun run --filter '@jcys/extension' zip",
+    "zip:firefox": "bun run --filter '@jcys/extension' zip:firefox",
+    "check": "bun run --filter '*' check",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "format": "oxfmt packages apps",
+    "format:check": "oxfmt --check packages apps",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@typescript/native-preview": "7.0.0-dev.20260527.2",
+    "oxfmt": "0.52.0",
+    "oxlint": "1.67.0",
+    "typescript": "6.0.3"
+  }
+}
