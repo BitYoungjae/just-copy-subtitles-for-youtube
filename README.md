@@ -7,7 +7,7 @@
 **Click the toolbar icon. The full transcript of the video you're watching lands on your clipboard.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
-![Chrome MV3](https://img.shields.io/badge/Chrome-MV3-4285F4?logo=googlechrome&logoColor=white)
+[![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-install-4285F4?logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/just-copy-subtitles-for-y/ffeoaadmmdmnjmlilhnncnhgfkdbanoj)
 ![Firefox MV3](https://img.shields.io/badge/Firefox-MV3-FF7139?logo=firefoxbrowser&logoColor=white)
 ![Tracking: none](https://img.shields.io/badge/tracking-none-success)
 
@@ -43,7 +43,9 @@ Timestamps use `0:07` and `12:34` under an hour, `1:02:05` past it. Bracket cues
 
 ### From the stores
 
-Chrome Web Store and Firefox Add-ons listings are currently under review.
+**[Install from the Chrome Web Store](https://chromewebstore.google.com/detail/just-copy-subtitles-for-y/ffeoaadmmdmnjmlilhnncnhgfkdbanoj)** — works in Chrome and other Chromium browsers (Edge, Brave, Arc).
+
+The Firefox Add-ons listing is currently under review.
 
 ### From source
 
